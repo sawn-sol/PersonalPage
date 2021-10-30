@@ -1,5 +1,5 @@
 html {
-    height: 300%;
+    height: 100%;
 }
 
 html, body {
@@ -39,9 +39,9 @@ header {
     align-items: stretch;
     padding-bottom: 100px;
 }
- 
-#section-1 div {
 
+#section-1 div {
+    
     display: flex;
     align-self: stretch;
     align-items: center;
@@ -51,17 +51,29 @@ header {
     /* margin-left: 222px; */
 }
 
+#section-1 div:first-child {
+    padding-left: 250px;
+}
 
-div > div { 
-
+#section-1-0 { 
     padding: 10px;
     display: flex;
     flex-direction: column;
+    text-align: start;
 }
+/* 
+div > div { 
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+} */
 
 
 #main-text {
+    width: 100%;
     font-size: 40px;
+    text-align: start;
 }
 
 #section-2 {
@@ -138,9 +150,6 @@ img {
     overflow:auto;
 
 }
-#section-1-0 {
-    padding: 10px; 
-}
 
 
 #section-4 {
@@ -148,20 +157,78 @@ img {
     height: 100%;
     padding: 100px;
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
+
 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#section-5 {
+#call-to-action  {
+    background-color: #3882F6; 
+    height: 200px; 
+    width: 100%;
+    border-radius: 10px;
+    margin: 100px; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#call-to-action div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; 
+}
+
+#call-to-action p:first-child{ 
+    margin-top: 50px;
+}
+
+#call-to-action p:nth-child(2){ 
+    font-weight: 100;
+}
+
+#call-to-action p{ 
+    margin: 0px;
+    /* margin-top: 5px; */
+    margin-left: 200px;
+    font-size: 30px;
+    text-align: start;
+    white-space: pre-line;
+}
+
+#call-to-action button {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-size: 100%;
+    margin: 100px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 40px;
+    
+    background-color: #3882F6;  
+    border: 5px solid white;
+    border-radius: 12px;
+    height: 25%;
+    width: 15%;
+}
+
+
+#footer {
     background-color: black;
     height: 100%;
     padding: 100px;
     padding-top: 50px;
     padding-bottom: 0px;
 
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
